@@ -12,23 +12,39 @@ interface Stark {
 // var names: any[] = ["jon,", 5]
 
 
-// enum starks { jon, bran, eddard, catlyn }
-// //this is a string of keys
+enum starks { jon, bran, eddard, catlyn = 234 }
+//this is a string of keys
 
-// var cat: starks = starks.catlyn
-
-
+var cat: starks = starks.catlyn
 
 
-
-
-
-
-
-function printname(stark: Stark) {
-    console.log(stark.name);
-
+var jo = 3;
+var bob = 3;
+var array = {
+    jo: 4, bob: 4, stuff: function () {
+        return "this is a function stuff"
+    }
 }
+console.log(typeof array);
+console.log(array.stuff());
 
-printname({ name: "Eddard" });
-printname({ label: "joe" });
+
+
+
+console.log("this is a compile test")
+console.log("this is a compile test")
+
+console.log("this is a compile test")
+console.log("this is a compile test")
+
+console.log("this is a compile test")
+console.log("this is a compile test")
+console.log("this is a compile test")
+console.log("this is a compile test")
+// function printname(stark: Stark) {
+//     console.log(stark.name);
+
+// }
+
+// printname({ name: "Eddard" });
+// printname({ name: "joe" });

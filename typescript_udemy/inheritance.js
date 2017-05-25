@@ -23,6 +23,7 @@ var Person = (function () {
 // create a new object called bran and run dance on that new object
 var bran = new Person(" bran");
 bran.dance();
+// class takes the properties from person
 var AwesomePerson = (function (_super) {
     __extends(AwesomePerson, _super);
     function AwesomePerson() {
@@ -30,6 +31,7 @@ var AwesomePerson = (function (_super) {
     }
     AwesomePerson.prototype.dance = function () {
         console.log("so awesome");
+        _super.prototype.dance.call(this);
     };
     return AwesomePerson;
 }(Person));
